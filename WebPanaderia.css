@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Mrs+Sheppards&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+    font-family: Oswald;
+}
+
+body
+{
+    margin: 0;
+}
+
+#PlanaPrincipal
+{
+    background-image: url('img/PlanaPrincipal2.jpg');
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#PlanaPrincipal h1
+{
+    font-size: 35px;
+    color: wheat;
+    margin-bottom: -50px;
+}
+#PlanaPrincipal h2
+{
+    font-size: 45px;
+    color:white;
+}
+#menu
+{
+    width: 99%;
+    height: 40px;
+    position: absolute;
+    left: 34%;
+    top: 20px;
+}
+#menu ul
+{
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    
+}
+
+#menu ul li a
+{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+#Servicios
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.Servicio h3
+{
+    font-size: 30px;
+}
+.Servicio p
+{
+    color: gray;
+}
+#Servicios h2
+{
+    color: rgba(110, 83, 34, 0.845);
+    font-size: 40px;
+    margin-bottom: -10px;
+}
+
+#TodosServicios
+{
+    display: flex;
+    margin-top: 50px;
+    gap: 90px;
+}
+.Servicio
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+}
+
+.Servicio img{
+    height: 210px;
+    border-radius: 100px;
+    border: 2px solid rgba(110, 83, 34, 0.845);
+}
+
+#galeria
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 200px;
+  gap: 20px;
+}
+#galeria #img1, #img2, #img3
+{
+  height: 450px;
+  width: 450px;
+  animation: rotacion 5s linear infinite;
+}
+#parpadeo
+{
+  height: 450px;
+  width: 450px;
+  animation: parpadeo 0.1s linear infinite;
+}
+.botonDiferente {
+  background-color: yellow; 
+  width: 100px;
+  margin-left: 70%;
+  color: purple; 
+  border: 2px solid orange; 
+  padding: 5px 10px; 
+  font-size: 18px; 
+  border-radius: 20px; 
+  text-transform: uppercase; 
+  text-decoration: line-through; 
+}
+@keyframes rotacion {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes parpadeo {
+  0%, 49% { opacity: 1; filter: none; }
+  50%, 100% { opacity: 0; filter: brightness(150%) saturate(150%); }
+}
+
+
+#galerias h3
+{
+  margin-left: 190px;
+  font-size: 30px;
+  color: wheat;
+}
+#galerias
+{
+  background-color:rgb(248, 206, 128) ;
+  padding: 50px;
+}
+
+#formulari {
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    gap: 270px;
+    justify-content: center;
+  }
+  
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  #mensaje {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    gap: 10px;
+  }
+  
+ 
+  
+  #formulari h2 {
+    width: 700px;
+    margin-bottom: 20px;
+    line-height: 40px;
+  }
+
+  #formulari h1
+  {
+    color: wheat;
+    font-size: 40px;
+  }
+  
+  .resaltado {
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    width: 105px;
+    white-space: nowrap;
+  }
+  
+  
+  
+  .inclinado input,
+  .inclinado textarea {
+    transform-origin: 0;
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+  }
+  
+  
+  .inclinado input {
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+  
+  .inclinado textarea {
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+  .inclinado textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  input::placeholder {
+    color: black;
+  }
+  
+  textarea::placeholder {
+    color: #000;
+  }
+  
+  .boton {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid black;
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+    cursor: pointer;
+  }
+  
+  .boton:hover {
+    background: #fe9d01;
+    color: white;
+  }
+  
+  
+  #info-contacte {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  
+  }
+  
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0;
+  }
+  
+  .info i {
+    font-size: 2.2rem;
+    margin-right: 10px;
+    color: black;
+    transition: color 0.4s;
+  }
+  
+  .info p {
+    font-size: 1.2rem;
+    color: black;
+    transition: color 0.4s;
+  }
+  
+  .info:hover {
+    color: #7209B7;
+  }
+  
+  .info:hover i {
+    color: #7209B7;
+  }
+  
+  .info:hover p {
+    color: #7209B7;
+  }
+  
+  @media (max-width: 1400px) {
+    #formulari {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 1000px;
+      gap: 50px;
+    }
+  
+    .info {
+      white-space: nowrap;
+    }
+  
+    h2 {
+      width: 100%;
+    }
+  
+  
+    #info-contacte {
+      border-top: 3px solid #000;
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      padding-top: 60px;
+    }
+  
+  }
+  
+  @media (max-width: 1300px) {
+  
+    #formulari
+    {
+      height: 1200px;
+    }
+    #info-contacte {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      padding-left: 40px;
+      padding-top: 50px;
+    }
+  
+    #galeria
+    {
+      grid-template-columns: 1fr;
+    }
+    #TodosServicios
+    {
+      flex-direction: column;
+    }
+
+    #Servicios{
+      height: 150vh;
+    }
+
+  }
